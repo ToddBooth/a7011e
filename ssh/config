@@ -22,6 +22,8 @@ Host aws-academy
     # copy the public key to the server
     # ssh-copy-id -i aws-academy_rsa.pub aws-academy.com
 
+    # test the connect with "ssh aws-academy"
+
 Host github.com
     HostName GitHub.Com
     User git 
@@ -30,4 +32,3 @@ Host github.com
     # test with "ssh github.com"
     # it will say, "sucessfully authenticated, but GitHub does not provide shell access"
     # this is normal, because we are using the git protocol, not the ssh protocol
-    
