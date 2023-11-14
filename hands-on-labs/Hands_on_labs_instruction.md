@@ -196,7 +196,7 @@ Host github.com
     User git 
     StrictHostKeyChecking no
     IdentityFile ~/source/secrets/ssh/keypair_1001_rsa
-    
+
 
 # Edit (or create) your ssh config file (and paste the above into it.  Then save the file.)
 code ~/.ssh/config
@@ -355,6 +355,7 @@ Nmap includes the command nping, which is very helpful for security and network 
 
 ```
 # Install nmap on the Ubuntu server
+sudo apt update
 sudo apt install -y nmap
 ```
 </details>
