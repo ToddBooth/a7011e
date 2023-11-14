@@ -315,7 +315,6 @@ ssh github.com
 # make sure that you have the latest version of the respository
 cd ~/source/repos/a7011e
 git pull
-```
 
 # change the script permissions to allow execution
 chmod +x ~/source/repos/a7011e/bin/add_sudo.sh
@@ -323,6 +322,7 @@ chmod +x ~/source/repos/a7011e/bin/add_sudo.sh
 # execute the script
 sudo ~/source/repos/a7011e/bin/add_sudo.sh
 ```
+
 </details>
 
 <details>
@@ -355,6 +355,7 @@ Nmap includes the command nping, which is very helpful for security and network 
 ```
 # Install nmap on the Ubuntu server
 sudo apt install -y nmap
+```
 </details>
 
 <details>
