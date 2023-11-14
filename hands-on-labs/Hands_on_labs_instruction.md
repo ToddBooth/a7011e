@@ -753,8 +753,9 @@ aws s3 ls
 Use the following shell: 4. Ubuntu - "vs code remote bash shell"
 
 We will now use the AWS cli, to create an AWS s3 bucket (which is object storage).
+# note that s3 bucket names must be unique worldwide, so you need to add a random 4 digit code to the end of the bucket name
 ```
-aws s3 mb s3://teacher-todd
+aws s3 mb s3://teacher-todd-{random 4 digit code}
 ```
 
 Now list the buckets, to verify it was created
