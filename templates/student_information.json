@@ -1,0 +1,8 @@
+{
+    "student_id": "your_id",
+    "first_name": "your_name",
+    "last_name": "your_name",
+    "last_task_completed": "example: 2.3",
+    "aws_server_ip_public_address": "example: 198.1.1.2"
+  }
+  
