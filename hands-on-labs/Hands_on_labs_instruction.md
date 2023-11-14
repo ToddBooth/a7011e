@@ -196,6 +196,7 @@ Host github.com
     User git 
     StrictHostKeyChecking no
     IdentityFile ~/source/secrets/ssh/keypair_1001_rsa
+    
 
 # Edit (or create) your ssh config file (and paste the above into it.  Then save the file.)
 code ~/.ssh/config
