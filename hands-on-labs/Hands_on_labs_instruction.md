@@ -228,9 +228,16 @@ ls -l ~/source/secrets/ssh/keypair_1001_rsa
 
 # authenicate to github.com
 ssh -v github.com 
+
+# If you still have problems, make sure that the client and server private key is the same.
+# On the client and server, output the MD5 hash and see if is the same value (just check the first and last three characters).  The MD5 hash will be the same, if the file is the same, and different if the file is different.  This MD5 hash is a great tool for security engineers.
+
+# Here is the command from a git bash or bash shell:
+
+md5sum ~/source/secrets/ssh/keypair_1001_rsa
 ```
 
-If you can't figure out the problem, you can send Teacher Todd an email with the above extra debugging information.
+If you can't figure out the problem, you can send Teacher Todd an email with the above extra debugging information and confirm that the md5 hash is the same.
 
 </details>
 
