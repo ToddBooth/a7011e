@@ -856,7 +856,7 @@ At the end of the above, add the following (note that I'm intentionally giveing 
 export AWS_DEFAULT_REGION='us-east-1'
 ```
 
-Then either exit your bash session and start a new one, or just souce the updated file as follows:
+Then either exit your bash session and start a new one, or just source the updated file as follows:
 ```
 source ~/source/secrets/bash_init.s
 ```
