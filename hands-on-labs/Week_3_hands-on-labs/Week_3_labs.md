@@ -1,28 +1,6 @@
 ### Hands-on labs Summary
 
 <details>
-<summary>#### Week 1</summary>
-
-0. AWS Academy Foundations course (includes some labs)
-1. Setup your programming IDE with Visual Studio Code and learn it
-2. Learn vs code and live share (remote pair programming)
-3. Learn Git and GitHub
-
-</details>
-
-<details>
-<summary>#### Week 2</summary>
-
-0. AWS Academy Foundations course (includes some labs)
-1. Clone and/or update our local course repository
-2. Learn how to use SSH with GitHub.com
-3. Learn how to create an AWS Ubuntu 22.04 server instance, with firewall and Elastic IP Address
-4. Learn how to use SSH with your new AWS Ubuntu server instance
-5. Learn how to use a local vs code with a remote cloud based Ubuntu server instance
-
-</details>
-
-<details>
 <summary>#### Week 3</summary>
 
 We have 25 short mini-tasks for week 3.  You will only get a pass or fail for today's lab sessions.  You do not need to do all of these mini-tasks to pass today's hands-on lab examination.
