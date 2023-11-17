@@ -832,64 +832,11 @@ aws iam create-user --user-name teacher-todd
 </details>
 
 <details>
-<summary>Task 26 - (moved)</summary>
+<summary>Task 26 - (moved to week 4)</summary>
 
 </details>
 
 <details>
-<summary>Task 27 - (Repeat) AWS Academy Foundations > Module 5 > Lab 2</summary>
-
-There was a small issue with the previous vesion of this task, since you need to specify the AWS region.  So, you need to repeat the lab, with the following additional information and instructions.  The problem is that you need to specify your region to create the VPC (virtual private cloud).  So, I've added those instructions below.
-
-Here is your previous .bashrc code, from task 20:
-
-```
-# Then my following script commands will export the environment variables from the above, into the right names
-export AWS_ACCESS_KEY_ID="$aws_access_key_id"
-export AWS_SECRET_ACCESS_KEY="$aws_secret_access_key"
-export AWS_SESSION_TOKEN="$aws_session_token"
-```
-
-At the end of the above, add the following (note that I'm intentionally giveing you less step by step insructions)
-
-```
-export AWS_DEFAULT_REGION='us-east-1'
-```
-
-Then either exit your bash session and start a new one, or just source the updated file as follows:
-```
-source ~/source/secrets/bash_init.s
-```
-
-Now verify that the environment variable exists
-```
-echo $AWS_DEFAULT_REGION
-```
-
-This task is specifically related to the AWS Academy Foundations > Module 5 > Lab 2 -  - Build your VPC and Launch a Web Server hands-on lab.  In that task you added a user to a group.  We will do some related tasks.
-
-When you create an AWS account, you will have a default VPC (virtual private cloud) build for you, and you can use that for many tasks.  However, we will create a new VPC.  A warning is that it will print out a lot of information, and it can be helpful to save the information, so we will save the output into a file.  The output is in json format (take the time and learn about that now).  So, we will save the output to the file named "~/aws_vpc.json"
-
-Note that you only need to execute this if you have not yet created the VPC, otherwise, you will get a failure that the VPC with this cidr already exists.
-
-```
-# change to your home directory
-cd
-
-# Create the VPC and capture the VPC ID
-VPC_ID=$(aws ec2 create-vpc --cidr-block 10.0.0.0/16 --query 'Vpc.VpcId' --output text)
-
-# Tag the VPC with a name
-aws ec2 create-tags --resources $VPC_ID --tags Key=Name,Value=MyVpc101
-
-# describe the vpcs
-aws ec2 describe-vpcs
-```
+<summary>Task 27 - (moved to week 4)</summary>
 
 </details>
-
-<details>
-<summary>TBD</summary>
-
-</details>
-
