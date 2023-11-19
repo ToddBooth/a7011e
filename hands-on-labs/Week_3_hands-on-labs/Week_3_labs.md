@@ -805,6 +805,7 @@ If you could add users, you could have done the following:
 
 Use the following shell: 4. Ubuntu - "vs code remote bash shell"
 ```
+# The following will not work on your limited AWS Academy account
 aws iam create-user --user-name teacher-todd
 ```
 </details>
