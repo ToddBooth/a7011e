@@ -47,7 +47,7 @@ Here is how to start the four shells, if you need to:
 1. Client - "external local bash shell": On Windows, after installing Git for Windows, you can use the Windows key and type "git", and choose "Git Bash". On MacOS, you can start a "terminal", and you'll have a zsh shell, but you can use that when I say "bash shell".
 2. Client - "vs code local shell": After you start vs code, you can open a file or folder on your client.  I suggest that, from the client, you open the folder, "~/source", and always have it availabe to edit files.  Then when you choose menu > view > terminal, you will get a "vs code local shell".  On Windows, from that shell, you can type the command "code file" to open any file into the vs code editor.  Unfortunately on MacOS, I don't think that the "code file" command works. 
 3. Ubuntu - "external remote bash shell": To get this shell you need to first get a 1. Client - "external local bash shell", and from that shell, do an "ssh aws-academy".
-4. Ubuntu - "vs code remote bash shell": To get this shell you need to first get a 2. Client - "vs code local shell", and from that shell, do an "ssh aws-academy".
+4. Ubuntu - "vs code remote bash shell": To get this shell, from vs code, you need to click on the SSH connect button (lower left, "<>"), chooce "Connect to Host", choose "aws-academy", and open the folder "~/source".  Then when you open a vs code terminal, you will already be logged in on the aws-academy server.
 
 You need to read the following instructions very carefully so see which bash shell (1-4) you should enter the command from.  If something goes wrong, double check to see if you entered the commands in the right shell.
 
