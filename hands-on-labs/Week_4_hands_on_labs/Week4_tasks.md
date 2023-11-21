@@ -1,15 +1,3 @@
-Hello beta testers,
-
-The new plan, is for beta testers to test all the tasks in this file, but please let me know ASAP when you find any issues to Todd.Booth@Ltu.se via email.  Thanks!
-
-On Tuesday, we only have 90 minutes for the hands-on labs.  The other 90 minutes is for a mid-term examinations, so I think that I already have more than enough hands-on labs for 90 minutes, so I'm very interested to hear how long these hands-on labs take you.
-
-Note, that the instructions refer to ~/source/repos/a7011e, but in the beta, the files are in ~/source/repos/a7011e_beta.
-
-Thanks so much for your help!
-
-Teacher Todd
-
 <details>
 <summary>Task 400 - Which shells to use</summary>
 
