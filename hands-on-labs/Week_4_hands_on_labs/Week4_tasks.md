@@ -443,7 +443,7 @@ aws ec2 describe-vpcs | grep -E 'VpcId|IsDefault|0.0/16|Value'
 
 We have created VPCs from the command line, but now let's create the three VPCs from a single script, to automate, which is required in IaC, SecOps, and DevSecOps.  Also, we will use a common bash function to create all three VPCs, so that we do not duplicate code, which is a best practice, in programming.  Note that there are two required parameters, the tag and cidr.  We will call the script create_all_vpc.sh.  It has been provided to you in the course a7011e repository, but you need to copy it to your ~/source/bin/.
 ```
-cp ~/source/repo/a7011e/bin/create_all_vpc.sh ~/source/bin/.
+cp ~/source/repos/a7011e/bin/create_all_vpc.sh ~/source/bin/.
 ```
 
 Make the script executable
@@ -507,7 +507,7 @@ In the last task, we showed you the high level script create_all.sh, which invok
 
 We will call the script create_vpc.sh.  It has been provided to you in the course a7011e repository, but you need to copy it to your ~/source/bin/.
 ```
-cp ~/source/repo/a7011e/bin/create_vpc.sh ~/source/bin/.
+cp ~/source/repos/a7011e/bin/create_vpc.sh ~/source/bin/.
 ```
 
 Make the script executable
@@ -526,7 +526,7 @@ Before executing the script, we are going to remove all of the existing VPC's ex
 
 ```
 delete_all_vpc.sh
-```
+``` 
 
 Now please execute the script, from the Linux cli, as a test, to create the "Development" VPC
 ```
