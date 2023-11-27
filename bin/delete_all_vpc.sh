@@ -36,5 +36,5 @@ delete_vpc 'Testing'
 # Delete the Production VPC
 delete_vpc 'Production'
 
-# Now, get a list of all of the VPCs, to verify that the three VPC's no longer exists.
+# Now, get a list of all of the VPCs, to verify that the three VPC's no longer exists, and only the Default VPC remains
 aws ec2 describe-vpcs | grep -E 'VpcId|IsDefault|0.0/16|Value'
