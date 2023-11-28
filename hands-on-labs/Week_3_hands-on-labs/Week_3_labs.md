@@ -318,7 +318,7 @@ Add the following paths to the Ubuntu PATH environment variable, via the .bashrc
 
 ```
 # add ~/source/bin/ and ~/source/secrets/bin/ to the PATH
-echo 'export PATH=$PATH:~/source/bin/:~/source/secrets/bin/' >> ~/.bashrc
+echo 'export PATH=$PATH:~/source/bin:~/source/secrets/bin' >> ~/.bashrc
 ```
 
 ```
