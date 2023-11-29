@@ -317,8 +317,10 @@ sudo ~/source/repos/a7011e/bin/add_sudo.sh
 Add the following paths to the Ubuntu PATH environment variable, via the .bashrc file
 
 ```
-# add ~/source/bin/ and ~/source/secrets/bin/ to the PATH
-echo 'export PATH=$PATH:~/source/bin:~/source/secrets/bin' >> ~/.bashrc
+# add ~/source/bin and ~/source/secrets/bin to the PATH, however you must use the full absolute path
+# You are changing the file, you need to edit it.  I suggest you edit it with "code ~/.bashrc"
+# The last statement should look like the following
+export PATH=/home/ubuntu/source/bin:/home/ubuntu/source/secrets/bin:$PATH
 ```
 
 ```
@@ -330,6 +332,8 @@ source ~/.bashrc
 # Verify that the directories were added to your path
 echo $PATH
 ```
+
+Now you can run script in your ~/source/bin, with just the script full name, like "delete_all_vpc.sh"
 
 </details>
 
