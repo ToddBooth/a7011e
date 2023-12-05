@@ -219,6 +219,7 @@ Here are the instructions:
 
 <details>
 <summary>Task 607 - Create a user named Administrator</summary>
+
 1. Login to your new AWS Management account.  
 2. Search for and run the IAM service
 3. Click on the left, "Users".
