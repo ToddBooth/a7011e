@@ -156,7 +156,7 @@ member_id1=$(aws identitystore create-user \
     )
     
 # Extract the second value
-member_id2=$(echo $member_id1 | awk '{print $2}')
+member_id2=$(echo $member_id1 | awk '{print $3}')
 
 echo member_id2: $member_id2
 
@@ -176,7 +176,7 @@ Now create and run your own script and here is a suggestion, on how to modify th
 ```
 #!/bin/bash
 
-# change the following, as needed, for your own envonrment.
+# change the following, as needed, for your own environment.
 # I have not tested this, so you may need to perform debugging on your own.
 region='eu-north-1'
 
@@ -333,3 +333,46 @@ Now experiment and create your own permission sets to allow the users in the IAM
 <summary>Task 715 - AWS IAM Identity Center - Experiment with Permission Sets for the "Prod" account</summary>
 Now experiment and create your own permission sets to allow the users in the IAM Identity Center group "a7011e" to be permitted to use your new permission sets for the AWS account "Prod", and see if it works.
 </details>
+
+<detail>
+<summary>Task 716 - Back to the main and details scripts</script>
+In tasks 708 and 709 you created a main and detail script.  I've updated 708 and 709 with the file names to use.  Now you will change the main script to set the variable values and to call the detailed script.  Name the script ~/source/bin/main2.sh.  Here is a draft of what the main script should look like:
+
+I'm working on this and it is not ready yet.
+
+```
+#!/bin/bash
+
+# change the following, as needed, for your own envonrment.
+# I have not tested this, so you may need to perform debugging on your own.
+
+region='eu-north-1'
+
+# replace with your identity_store_id:
+identity_store_id='d-c3671ffba8'
+
+# after you create a a7011e course group, change the following values, as needed:
+
+group_id='40fc59bc-e061-7011-cf35-47fab24198cf'
+course='a7011e'
+user_name='foobar-2'
+user_name_long="${course}-${user_name}"
+first_name='Foo'
+last_name='Bar'
+display_name="${first_name} ${last_name}"
+email='foobar-7@Student.Ltu.se'
+
+iam_ic_add_user \
+  $region \
+  $identity_store_id \
+  $group_id \
+  $course \
+  $user_name \
+  $first_name \
+  $last_name \
+  $display_name \
+  $email
+```
+
+
+</detail>
