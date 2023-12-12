@@ -217,7 +217,7 @@ aws identitystore create-group-membership \
       --member-id "UserId=$member_id2"
 ```
 
-Then run the above script and try to remember what you need to do to have the script become executable.
+Create the above script in your ~/source/bin/ directory.  Try to remember what you need to do to have the script become executable.  Try to remember how to tell bash to look for any new files in your path, including in ~/source/bin/.  Then run the above script.
 </details>
 
 <details>
