@@ -222,7 +222,7 @@ Create the above script in your ~/source/bin/ directory.  Try to remember what y
 
 <details>
 <summary>Task 709 - AWS IAM Identity Center - add one user via an external script</summary>
-Now create your own script and here is a suggestion, on how to modify the script to use variables.
+Now create your own script and here is a suggestion, on how to modify the script to use variables.  Name your external script, iam_main.sh and put it in ~/source/bin/.
 
 The following is the main script you will invoke, to invoke the other script and pass parameters to it.  Make sure that you fully understand the following:
 
@@ -259,8 +259,9 @@ iam_ic_add_user \
   $display_name \
   $email
 ```
+Change the script to create a user with any userid you want.  Then exectute the above script and see if a user was created in IAM Identity Center.
 
-Now create a new script, similar to the following. Make sure that you fully understand the following:
+Now create a new script, similar to the following.  Name it iam_detail.sh. Make sure that you fully understand the following:
 
 ```
 #!/bin/bash
