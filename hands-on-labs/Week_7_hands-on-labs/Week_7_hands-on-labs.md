@@ -169,7 +169,7 @@ aws identitystore create-group-membership \
 
 <details>
 <summary>Task 708 - AWS IAM Identity Center - using bash variables</summary>
-Now create your own script and here is a suggestion, on how to modify the script to use variables.
+Now create and run your own script and here is a suggestion, on how to modify the script to use variables.
 
 ```
 #!/bin/bash
@@ -214,6 +214,8 @@ aws identitystore create-group-membership \
       --group-id $group_id \
       --member-id "UserId=$member_id2"
 ```
+
+Then run the above script and try to remember what you need to do to have the script become executable.
 </details>
 
 <details>
