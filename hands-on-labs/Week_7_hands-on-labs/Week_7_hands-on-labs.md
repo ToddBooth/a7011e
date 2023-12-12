@@ -135,7 +135,7 @@ Try to learn on your own how to use the Policy Similary.  Try to run a test of a
 <summary>Task 706 - AWS IAM Identity Center</summary>
 Please first read the information about the IAM Identity Center at this [Link](https://aws.amazon.com/iam/identity-center/).
 
-On your own, try to learn what all the features and functionality is of the IAM IC, and then create the IAM IC on your own, from your root user, in your AWS Organizations Management account.  You should create a "local" database store, not for example a Microsoft Active Directory database.
+On your own, try to learn what all the features and functionality is of the IAM IC, and then create the IAM IC on your own, from your root user, in your AWS Organizations Management account.  You should create a "local" database store, not for example a Microsoft Active Directory database.  The "local" database store is created by default.
 </details>
 
 <details>
@@ -165,6 +165,8 @@ aws identitystore create-group-membership \
       --group-id 40fc59bc-e061-7011-cf35-47fab24198cf \
       --member-id "UserId=$member_id2"
 ```
+
+You do not need to execute the above script.
 </details>
 
 <details>
