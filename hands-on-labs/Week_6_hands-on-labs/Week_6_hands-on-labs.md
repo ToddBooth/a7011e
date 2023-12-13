@@ -303,7 +303,9 @@ Allows the creation and deletion of tags on Amazon EBS resources. Tags are usefu
 
 When crafting IAM policies, it's crucial to consider the specific actions required for your use case and apply the principle of least privilege. This means granting users or roles the minimum set of permissions necessary to perform their tasks effectively, without providing unnecessary access.
 
-The following policy allows all EBS actions, except EBS xx.  If you wanted to, you could add more EBS actions to the deny list, and they would also be denied.  For example, you could some of the above actions to the EBS deny list:
+The ebs actions are part of ec2, for example you might think you could use ebs:CreateTags, but you actually need to use ec2:CreateTags, even for tags on an ebs volume.
+
+The following policy allows all ec2 actions, except for the listed deny actions.  If you wanted to, you could add more EBS actions to the deny list, and they would also be denied.  For example, you could some of the above actions to the ec2 deny list.  Even though you give some permissions to ec2, it is recommended that you don't try to create ec2 instances on your own AWS accounts.  Instead create instances on your AWS Academy account, which is 100% free.
 
 Here are the instructions:
 
@@ -313,7 +315,7 @@ Here are the instructions:
 4. Click on the top, "Filter by Type".
 5. Click on the upper right, "JSON".
 6. Select "Customer managed".
-7. Select the policy you created earlier, called "Admininstrators".
+7. Select the policy you created earlier, called "Administrators".
 8. Paste the following to replace the old json, and take the time to understand it.
 9. Save the above policy to apply it.
 ```
@@ -326,17 +328,21 @@ Here are the instructions:
 			"Action": [
 				"cloudtrail:*",
 				"cloudwatch:*",
-        "ebs:*",
-			  "s3:*",
+        		"ec2:*",
+				"s3:*",
 				"iam:*",
-        "q:*"
+        		"q:*"
 			],
 			"Resource": "*"
 		},
 		{
 			"Sid": "DenyEbsDeny",
 			"Effect": "Deny",
-			"Action": "ebs:CreateTags",
+			"Action": [
+				"ec2:CreateTags",
+				"ec2:RunInstances",
+				"ec2:RunScheduledInstances"
+			],
 			"Resource": "*"
 		},
 		{
