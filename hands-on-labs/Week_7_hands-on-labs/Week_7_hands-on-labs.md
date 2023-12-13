@@ -156,7 +156,7 @@ member_id1=$(aws identitystore create-user \
     )
     
 # Extract the second value
-member_id2=$(echo $member_id1 | awk '{print $3}')
+member_id2=$(echo $member_id1 | awk '{print $2}')
 
 echo member_id2: $member_id2
 
